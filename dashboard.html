@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <div>
+    <div class="startquiz">
+      <button id="glass-btn" class="glass-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+  </div>
+
+  <script>
+    function startQuiz() {
+      const quizWindow = window.open("quiz.html", "_blank");
+      // Wait a bit to ensure the new window is fully loaded
+      setTimeout(() => {
+        quizWindow.postMessage("startQuiz", "*");
+      }, 500);
+    }
+          
+  </script>
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+  <script src="app.js"></script>
+  
+</body>
+
+</html>

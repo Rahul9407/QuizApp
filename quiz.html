@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Website</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="quiz">
+    <h2 id="question">Loading question...</h2>
+    <ul id="options">
+      <li><input type="radio" name="answer" class="answer" id="a"><label for="a" class="option_1 answer-label">Option
+          A</label></li>
+      <li><input type="radio" name="answer" class="answer" id="b"><label for="b" class="option_2 answer-label">Option
+          B</label></li>
+      <li><input type="radio" name="answer" class="answer" id="c"><label for="c" class="option_3 answer-label">Option
+          C</label></li>
+      <li><input type="radio" name="answer" class="answer" id="d"><label for="d" class="option_4 answer-label">Option
+          D</label></li>
+    </ul>
+    <button id="submit" class="sumit">Submit</button>
+    <div class="timer" id="timer">Time Left: 10s</div>
+  </div>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="app.js" defer></script>
+<script src="index.js" defer></script>
+<script src="signout.js"></script>
+  
+</body>
+
+</html>

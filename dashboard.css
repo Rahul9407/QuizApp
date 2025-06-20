@@ -1,0 +1,45 @@
+:root {
+  --btn-bg-color: #636061;
+  --btn-hover-bg-color: #4a4a4a;
+  --btn-text-color: #ffffff;
+  --btn-hover-text-color: #ffffff;
+  --navbar-bg-color: #cecfcf;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: right;
+  overflow: hidden;
+  font: 1em sans-serif;
+  text-align: center;
+}
+.glass-btn {
+  background-color: rgba(44, 31, 31, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 10vh;
+  width: 40vh;
+  margin-top: 40vh;
+  text-transform: uppercase;
+  font-size: large;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+}
+.glass-btn:hover {
+  background-color: rgba(44, 31, 31, 0.4);
+}
+.glass-btn:active {
+  background-color: rgba(44, 31, 31, 0.6);
+}
+
+
